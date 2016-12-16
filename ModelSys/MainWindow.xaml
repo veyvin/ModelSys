@@ -1,0 +1,26 @@
+﻿<Window x:Class="ModelSys.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModelSys"
+        mc:Ignorable="d"
+        Title="模型库" Height="432.254" Width="525" WindowStyle="ThreeDBorderWindow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#A0B8F7" Offset="0"/>
+                <GradientStop Color="#C2E5F3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="label_GameName" Content="模型库系统" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Height="34" Width="104" FontSize="16" Foreground="White"/>
+        <Label x:Name="label_Version" Content="V 0.1" HorizontalAlignment="Left" Margin="114,15,0,0" VerticalAlignment="Top" Height="26" Width="60" FontSize="8" Foreground="#FFBCBCBC"/>
+        <Button x:Name="button" Content="Launch" Margin="0,0,19,17" Click="button_Click" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="74"/>
+        <CheckBox x:Name="checkBox_Close" Content="" HorizontalAlignment="Right" Margin="0,0,97,17" VerticalAlignment="Bottom" x:FieldModifier="public" Checked="checkBox_Close_Checked" Unchecked="checkBox_Close_UnChecked" IsChecked="True"/>
+        <Label x:Name="label_CloseFlag" Content="Close Launcher?" HorizontalAlignment="Right" Margin="0,0,117,15" VerticalAlignment="Bottom" Width="70" FontSize="8" Foreground="White"/>
+        <WebBrowser x:Name="myweb" Margin="20,46,19,57"/>
+    </Grid>
+</Window>
